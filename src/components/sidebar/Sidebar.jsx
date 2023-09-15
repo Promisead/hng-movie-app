@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import Logo from '../../assets/tv.svg';
 import HomeIcon from '../../assets/Home.svg';
-import SeriesIcon from '../../assets/TV.svg';
+/* import SeriesIcon from '../../assets/TV.svg'; */
 import MoviesIcon from '../../assets/Movie.svg';
 import LogoutIcon from '../../assets/Logout.svg';
 import UpcomingIcon from '../../assets/Calendar.svg';
@@ -32,7 +32,7 @@ const Sidebar = () => {
         </li>
         <li>
           <NavLink to="/" aria-label="TV Series">
-            <img src={SeriesIcon} alt="TV Icon" />
+            <img src={Logo} alt="TV Icon" />
             <span>TV Series</span>
           </NavLink>
         </li>
