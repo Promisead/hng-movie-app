@@ -1,0 +1,94 @@
+@import '../../index.scss';
+
+.movie-card {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: rgba(243, 244, 246, 0.8);
+    scale: 1.02;
+  }
+
+  div,
+  p,
+  span,
+  img,
+  button {
+    background: transparent;
+  }
+  .poster-wrap {
+    background: transparent;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  button.favorite {
+    position: absolute;
+    top: 4%;
+    right: 7%;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    background: rgba(243, 244, 246, 0.5);
+    backdrop-filter: blur(1px);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    svg {
+      color: $rose-700;
+      background: transparent;
+    }
+
+    &:hover {
+      background: rgba(190, 18, 60, 0.5);
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .country {
+      color: $gray-400;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .title {
+      color: $gray-900;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .genre {
+      color: $gray-400;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .ratting {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      color: $gray-900;
+
+      & > span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        img {
+          background: none;
+        }
+      }
+    }
+  }
+}

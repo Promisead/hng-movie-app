@@ -1,0 +1,58 @@
+@import '../../index.scss';
+
+.search-card {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+
+  &:hover {
+    background: rgba(243, 244, 246, 0.8);
+    scale: 1.02;
+  }
+
+  div,
+  p,
+  span,
+  img,
+  button {
+    background: transparent;
+  }
+
+  .poster-wrap {
+    background: transparent;
+    border-radius: 10px;
+    min-width: 60px;
+
+    img {
+      height: 90px;
+      border-radius: 10px;
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .country {
+      color: $gray-400;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .title {
+      color: $gray-900;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .genre {
+      color: $gray-400;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
